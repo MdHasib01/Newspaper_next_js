@@ -18,15 +18,22 @@ const readNews = ({ news }) => {
           property="og:description"
           content={`${news.title}। ভোরের আলো বাংলা সংবাদপত্র। দক্ষিণবঙ্গেরর সর্ববৃহৎ নিউজ পেপার।`}
         />
-        {/* <link rel="canonical" href={window.location.href}></link> */}
+        <link
+          rel="canonical"
+          href={`https://stark-stream-09883.herokuapp.com/allnews/${context.params.id}`}
+        ></link>
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="article" />
-        {/* <meta property="og:url" content={window.location.href} /> */}
-        <meta property="og:site_name" content="VORER ALO" />
         <meta
+          property="og:url"
+          content={`https://stark-stream-09883.herokuapp.com/allnews/${context.params.id}`}
+        />
+        <meta property="og:site_name" content="VORER ALO" />
+        <meta property="og:image" content={`decoder.php?data=${news.image}`} />
+        {/* <meta
           property="og:image"
           content={`data:image/png;base64,${news.image}`}
-        />
+        /> */}
         <meta property="og:image:width" content="720" />
         <meta property="og:image:height" content="469" />
         <meta name="twitter:card" content="summary_large_image" />
