@@ -29,7 +29,10 @@ const readNews = ({ news }) => {
           content={`https://stark-stream-09883.herokuapp.com/allnews/${news._id}`}
         />
         <meta property="og:site_name" content="VORER ALO" />
-        <meta property="og:image" content={`decoder.php?data=${news.image}`} />
+        <meta
+          property="og:image"
+          content="https://i.ibb.co/5KjDS4S/Gigs-Blog-Post-compressed1-2.gif"
+        />
         {/* <meta
           property="og:image"
           content={`data:image/png;base64,${news.image}`}
