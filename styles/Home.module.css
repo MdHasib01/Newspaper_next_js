@@ -1,4 +1,4 @@
-.container {
+/* .container {
   padding: 0 2rem;
 }
 
@@ -106,11 +106,25 @@
 .logo {
   height: 1em;
   margin-left: 0.5rem;
-}
+} */
 
 @media (max-width: 600px) {
   .grid {
     width: 100%;
     flex-direction: column;
+  }
+}
+.body-container {
+  padding: 16px;
+}
+@media (min-width: 769px) {
+  .thin-border {
+    border-right: 1px solid gray;
+  }
+}
+@media (max-width: 768px) {
+  .thin-border {
+    border-bottom: 1px solid gray;
+    margin: 15px 0px;
   }
 }
