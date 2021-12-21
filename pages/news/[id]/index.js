@@ -20,13 +20,13 @@ const readNews = ({ news }) => {
         />
         <link
           rel="canonical"
-          href={`https://stark-stream-09883.herokuapp.com/allnews/${context.params.id}`}
+          href={`https://stark-stream-09883.herokuapp.com/allnews/${news._id}`}
         ></link>
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="article" />
         <meta
           property="og:url"
-          content={`https://stark-stream-09883.herokuapp.com/allnews/${context.params.id}`}
+          content={`https://stark-stream-09883.herokuapp.com/allnews/${news._id}`}
         />
         <meta property="og:site_name" content="VORER ALO" />
         <meta property="og:image" content={`decoder.php?data=${news.image}`} />
