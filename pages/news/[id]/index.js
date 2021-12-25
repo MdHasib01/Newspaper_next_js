@@ -1,6 +1,7 @@
 import Head from "next/head";
 import React from "react";
 import { useRouter } from "next/router";
+import Comment from "../../../components/Comment";
 
 const readNews = ({ news }) => {
   //   const router = { useRouter };
@@ -29,14 +30,11 @@ const readNews = ({ news }) => {
           content={`https://stark-stream-09883.herokuapp.com/allnews/${news._id}`}
         />
         <meta property="og:site_name" content="VORER ALO" />
+
         <meta
           property="og:image"
-          content="https://i.ibb.co/5KjDS4S/Gigs-Blog-Post-compressed1-2.gif"
-        />
-        {/* <meta
-          property="og:image"
           content={`data:image/png;base64,${news.image}`}
-        /> */}
+        />
         <meta property="og:image:width" content="720" />
         <meta property="og:image:height" content="469" />
         <meta name="twitter:card" content="summary_large_image" />
@@ -76,7 +74,7 @@ const readNews = ({ news }) => {
               <div>social icon</div>
             </div>
             <hr />
-            {/* <Comment newsId={news._id} /> */}
+            <Comment newsId={news._id} />
           </div>
         </div>
         <div>
